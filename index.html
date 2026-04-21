@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h1>ShopEasy</h1>
+    <input type="text" id="search" placeholder="Search products...">
+    <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+  </nav>
+
+  <div class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('fashion')">Fashion</button>
+    <button onclick="filterProducts('shoes')">Shoes</button>
+  </div>
+
+  <div class="products" id="product-list"></div>
+
+  <div class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
